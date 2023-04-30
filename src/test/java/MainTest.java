@@ -25,8 +25,10 @@ public class MainTest {
                 time = bean.getTimer().getTime();
                 continue;
             }
+            bean.whatAnimalSay();
             Assert.assertEquals("Тест провален, не корректная реализация бинов.", time, bean.getTimer().getTime().longValue());
             System.out.println(time);
+
         }
     }
 }
